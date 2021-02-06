@@ -11,6 +11,11 @@ nav .nav-item .nav-link{
     width:1000px;
     margin:auto;
 }
+.food-card-area-warning{
+    width:1000px;
+    margin:auto;
+    text-align: center;
+}
 .item-thum{
     height:200px;
     object-fit: cover;
