@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 nav .nav-item .nav-link{
     color:black;
     font-weight:500;
@@ -24,7 +29,15 @@ nav .nav-item .nav-link{
     height:100%;
     background: transparent !important;
 }
-
+.card-body{
+    padding:3rem;
+}
+.ingredient li{
+    list-style: none;
+}
+.ingredient li::before{
+    content: '';
+}
 #food-datails-shower{
     background:lightblue;
     position: fixed;
@@ -32,8 +45,7 @@ nav .nav-item .nav-link{
     width:80%;
     z-index: 100;
     top:0px;
-    left:50%;
-    transform: translateX(100%);
+    right:-120%;
     overflow-y: auto;
     transition: all 1s;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.025),
@@ -48,7 +60,7 @@ nav .nav-item .nav-link{
     display: none;
 }
 .food-datails-move{
-    transform: translateX(-37.5%) !important;
+    right:0% !important;
 }
 
 .item-details-card .card{

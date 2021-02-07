@@ -28,3 +28,63 @@ const foodShow = (foods) => {
     foodCardArea.classList.add("food-card-area");
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var keys = [];
+
+for (var number in meal) {
+  if (meal.hasOwnProperty(number)) {
+    keys.push(number);
+  }
+}
+// const result = keys.filter((x) => x === `strIngredient${}`);
+// console.log(result);
+const reslut = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ for (let i = 0; i < allFood.length; i++) {
+   const food = allFood[i];
+   const foodCard = document.createElement("div");
+   foodCard.id = food.idMeal;
+   foodCard.className = "food-card";
+   foodCard.setAttribute("onclick", "getSelectCard(this.id)");
+
+   foodCard.innerHTML = `
+        <div class="card" >
+            <img src="${food.strMealThumb}" class="card-img-top item-thum" alt="...">
+            <div class="card-body">
+                <h5 class="text-center"> ${food.strMeal}</h5>
+                
+            </div>
+        </div>
+        `;
+   allFindItem.appendChild(foodCard);
+ }
