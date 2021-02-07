@@ -15,7 +15,7 @@ const itemCallByName = () => {
       console.log(data);
       foodShowWithValidator(data);
     });
-    seachTitle.innerHTML = `Showing Meal For "${itemSearch.value}"<hr>`
+    
 };
 
 /* -----------------------------------------------------------------------
@@ -30,8 +30,10 @@ const foodShowWithValidator = (foods) => {
         </div>`;
     foodCardArea.classList.remove("food-card-area");
     foodCardArea.classList.add("food-card-area-warning");
+    seachTitle.innerHTML = ""
   } else {
     allMealshow(foods);
+    seachTitle.innerHTML = `Showing Meal For "${itemSearch.value}"<hr>`;
   }
 };
 
