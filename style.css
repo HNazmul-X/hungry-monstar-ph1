@@ -32,17 +32,26 @@ nav .nav-item .nav-link{
 .card-body{
     padding:3rem;
 }
-.ingredient li{
+.ingredient {
     list-style: none;
+    padding-left:0px !important;
+    margin-top:20px;
+}
+.ingredient li{
+    margin-bottom: 7px;
 }
 .ingredient li::before{
-    content: '';
+    content: "✅";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bolder;
+    color:green;
+    margin-right:5px;
 }
 #food-datails-shower{
     background:lightblue;
     position: fixed;
     height:100vh;
-    width:80%;
+    width:1080px;
     z-index: 100;
     top:0px;
     right:-120%;
